@@ -27,11 +27,11 @@ const Hero =()=>{
                      VIDEO EDITOR
                 </div>
                 <div className="img flex md:flex-row flex-col gap-20 md:mt-16 mt-8 ">
-                    <video muted autoPlay loop className='rounded-3xl w-[300px]  cursor-grab'>
+                    <video muted autoPlay loop playsInline className='rounded-3xl w-[300px]  cursor-grab'>
                         <source src={Img} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <video muted autoPlay loop className='rounded-3xl w-[300px]  cursor-grab'>
+                    <video muted autoPlay loop playsInline className='rounded-3xl w-[300px]  cursor-grab'>
                         <source src={Imag} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>

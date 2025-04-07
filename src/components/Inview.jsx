@@ -91,6 +91,7 @@ const Inview = () => {
                     muted
                     autoPlay
                     loop
+                    playsInline
                     className="rounded-2xl h-[400px] md:mb-8 mb-0 "
                 >
                     <source src={vid} type="video/mp4" />
@@ -100,6 +101,7 @@ const Inview = () => {
                     muted
                     autoPlay
                     loop
+                    playsInline
                     className="rounded-2xl h-[400px] md:mb-8 mb-4 "
                 >
                     <source src={vid2} type="video/mp4" />
