@@ -21,7 +21,7 @@ const Video = () => {
         </span>
       </section> */}
 
-      <div className='mt-32 w-[90vw] ml-16'>
+      <div className='mt-12 w-[90vw] md:ml-16 ml-5' >
         <video muted autoPlay loop className='rounded-3xl'>
           <source src={sofia} type="video/mp4" />
           Your browser does not support the video tag.

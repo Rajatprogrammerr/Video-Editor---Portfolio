@@ -6,11 +6,11 @@ import logo from "../assets/NN.png"
 const Navbar = () => {
     return (
         <div>
-            <nav className="backdrop-blur-lg sticky top-0  pt-3 pb-3 pl-12 pr-12 flex justify-between items-center ">
-                <div className="logo w-32 cursor-grab">
+            <nav className="backdrop-blur-lg   flex justify-around  items-center md:mt-0 mt-4">
+                <div className="logo w-32 cursor-grab md:block hidden">
                     <img src={logo} alt="" />
                 </div>
-                <ul className='flex gap-6 font-extrabold text-xl'>
+                <ul className='flex gap-6 font-extrabold text-xl justify-center items-center '>
                     {/* {navItems.map((items, index) => (
                         <li key={index}><a href={items.href} target='_blank'>{items.label}</a></li>
 
