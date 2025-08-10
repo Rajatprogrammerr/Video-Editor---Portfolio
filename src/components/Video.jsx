@@ -8,7 +8,7 @@ const Video = () => {
       {/* Heading */}
       <div className="font-bold text-white text-xl sm:text-2xl flex flex-wrap justify-center gap-2">
         <span>Creativity is</span>
-        <span className="hover:text-red-600 pinyon-script-regular text-2xl sm:text-3xl">
+        <span className="text-red-600 pinyon-script-regular text-2xl sm:text-3xl">
           Endless
         </span>
       </div>
