@@ -1,28 +1,28 @@
 
-import { navItems } from '../constant'
+// import { navItems } from '../constant'
 import logo from "../assets/NN.png"
+import { Mail, Instagram } from 'lucide-react';
+import { Link } from "react-router-dom";
+
+
 
 
 const Navbar = () => {
     return (
         <div>
-            <nav className="backdrop-blur-lg   flex justify-around  items-center md:mt-0 mt-4">
-                <div className="logo w-32 cursor-grab md:block hidden">
-                    <img src={logo} alt="" />
-                </div>
-                <ul className='flex gap-6 font-extrabold text-xl justify-center items-center '>
-                    {/* {navItems.map((items, index) => (
-                        <li key={index}><a href={items.href} target='_blank'>{items.label}</a></li>
+            <nav className="flex flex-col gap-6 m-20  fixed z-10 right-0 ">
+                <a href="https://www.instagram.com/_____noor._______/" target="_blank">
 
-                    ))} */}
-                    <li className='text-red-800'><a href="https://www.instagram.com/nizami.noor_/" target='_blank'>Instagram</a></li>
-                    <li className='text-blue-800'><a href="https://mail.google.com/mail/?view=cm&to=rpurpose81@gmail.com&su=SUBJECT&body=BODY" target='_blank'>Mail</a></li>
-                </ul>
-                {/* <div className="buttons flex gap-4">
-                    <button className='rounded-xl w-32  font-bold bg-red-700 text-lg  px-4 py-3 text-white'>Instagram</button>
-                    
-                </div> */}
+                    <Instagram className="text-white cursor-pointer hover:scale-125 transition-transform duration-400 ease-in-out " />
+                </a>
+
+                <a href="https://mail.google.com/mail/?view=cm&to=rpurpose81@gmail.com&su=SUBJECT&body=BODY" target="_blank">
+
+                    <Mail className="text-white cursor-pointer hover:scale-125 transition-transform duration-400 ease-in-out " />
+                </a>
+                  
             </nav>
+
         </div>
     )
 }

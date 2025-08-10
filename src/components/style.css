@@ -1,8 +1,22 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Limelight&family=Pinyon+Script&display=swap');
+
 
 .bungee-shade-regular {
     font-family: "Bungee Shade", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
+  
+  .pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
