@@ -16,7 +16,7 @@ const Navbar = () => {
                     <Instagram className="text-white cursor-pointer hover:scale-125 transition-transform duration-400 ease-in-out " />
                 </a>
 
-                <a href="https://mail.google.com/mail/?view=cm&to=rpurpose81@gmail.com&su=SUBJECT&body=BODY" target="_blank">
+                <a href="https://mail.google.com/mail/?view=cm&to=rajatsinghwork78@gmail.com&su=SUBJECT&body=BODY" target="_blank">
 
                     <Mail className="text-white cursor-pointer hover:scale-125 transition-transform duration-400 ease-in-out " />
                 </a>
