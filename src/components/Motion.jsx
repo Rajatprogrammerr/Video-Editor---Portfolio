@@ -3,7 +3,8 @@ import motion1 from '../assets/AICerts.mp4';
 import motion2 from '../assets/Master_Frame.mp4';
 
 const MotionGraphics = () => {
-  const videos = [motion1, motion2];
+  const videos = ["https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067600/AICerts_jxshfq.mp4", 
+    "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067615/Master_Frame_zsyzen.mp4"];
 
   return (
     <div className='flex flex-col items-center overflow-x-hidden w-full pb-16'>

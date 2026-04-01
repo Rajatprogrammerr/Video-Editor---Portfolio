@@ -1,12 +1,15 @@
 import React from 'react';
-import edtech1 from '../assets/Edtech1.mp4';
-import tech from "../assets/tech.mp4"
-import edtech3 from '../assets/Edtech3.mp4';
-import edtech4 from '../assets/Edtech4.mp4';
+// import edtech1 from '../assets/Edtech1.mp4';
+// import tech from "../assets/tech.mp4"
+// import edtech3 from '../assets/Edtech3.mp4';
+// import edtech4 from '../assets/Edtech4.mp4';
 
 const Vertical = () => {
   // Store videos in an array for cleaner rendering
-  const videos = [edtech1, edtech3,tech, edtech4];
+  const videos = ["https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067632/Edtech4_fjkftj.mp4",
+    "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067626/tech_sboivl.mp4",
+    "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067603/Edtech3_mbnxmr.mp4",
+    "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067625/Edtech1_gul3rv.mp4"];
 
   return (
     <div className="flex flex-col items-center overflow-x-hidden min-h-screen p-4 sm:p-8">
