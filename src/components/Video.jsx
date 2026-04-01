@@ -1,7 +1,10 @@
-import sofia from "../assets/Video1_1.mp4";
-import karan from "../assets/Karan.mp4";
+import React from 'react';
 
 const Video = () => {
+  // ✅ Replace these placeholder URLs with your actual Cloudinary video links
+  const sofiaUrl = "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775069084/Video1_1_e9slkt.mp4";
+  const karanUrl = "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775069073/Karan_wskrxs.mp4";
+
   return (
     <div className="flex flex-col justify-center items-center px-4 md:px-10 lg:px-20 space-y-8">
       
@@ -23,7 +26,8 @@ const Video = () => {
           playsInline
           className="rounded-3xl w-[90vw] sm:w-[70vw] md:w-[50vw]"
         >
-          <source src={sofia} type="video/mp4" />
+          {/* Source points to the Cloudinary variable */}
+          <source src={sofiaUrl} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -38,7 +42,8 @@ const Video = () => {
           playsInline
           className="rounded-3xl w-[90vw] sm:w-[70vw] md:w-[50vw]"
         >
-          <source src={karan} type="video/mp4" />
+          {/* Source points to the Cloudinary variable */}
+          <source src={karanUrl} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
