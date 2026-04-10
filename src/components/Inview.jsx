@@ -6,7 +6,7 @@ const Inview = () => {
     return (
         <div className="">
             <div className="mt-24 mb-10 text-white bungee-shade-regular text-6xl  text-center">
-                Paid Work
+                Youtube
             </div>
             
             <div className="w-full px-4 sm:px-6 md:px-12 lg:px-24 py-8 flex flex-wrap gap-10 justify-center items-center">

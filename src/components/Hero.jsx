@@ -1,42 +1,29 @@
 import pic from "../assets/pic.png";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const paragraphs = gsap.utils.toArray(".anim-text");
+      // Create a simple timeline without ScrollTrigger
+      const tl = gsap.timeline();
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: "+=3000",
-          scrub: 1,
-          pin: true,
-          // markers: true,
-        },
-      });
-
+      // 1. Animate the image in
       tl.fromTo(
         "img",
         { scale: 0.5, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 1 }
+        { scale: 1, opacity: 1, duration: 1, ease: "power2.out" }
       );
 
-      paragraphs.forEach((p) => {
-        tl.fromTo(
-          p,
-          { y: 50, opacity: 0 },
-          { y: 0, opacity: 1, duration: 1 },
-          "+=0.5"
-        );
-      });
+      // 2. Animate the text items sequentially using 'stagger'
+      tl.fromTo(
+        ".anim-text",
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: "power2.out" },
+        "-=0.5" // This makes the text start animating just before the image finishes
+      );
     }, sectionRef);
 
     return () => ctx.revert();
@@ -60,11 +47,11 @@ const Hero = () => {
       </div>
 
       {/* Right Side */}
-      <div className="text-white text-xl sm:text-2xl md:text-4xl w-full md:w-auto mt-10 md:mt-0 space-y-10 limelight-regular tracking-wider flex flex-col justify-center items-center md:items-start">
-        <p className="anim-text text-blue-200">After Effects</p>
-        <p className="anim-text text-blue-200">Premiere Pro</p>
-        <p className="anim-text text-blue-200">Video Enhancement</p>
-        <p className="anim-text text-blue-200">Image UpScaling</p>
+      <div className="text-white text-xl sm:text-2xl md:text-4xl w-full md:w-auto mt-10 md:mt-0 space-y-10  tracking-wider flex flex-col justify-center items-center md:items-start  ">
+        <p className="anim-text text-white font-extrabold">After Effects</p>
+        <p className="anim-text text-white font-extrabold">Premiere Pro</p>
+        <p className="anim-text text-white font-extrabold">Video Enhancement</p>
+        <p className="anim-text text-white font-extrabold">Image UpScaling</p>
       </div>
     </div>
   );

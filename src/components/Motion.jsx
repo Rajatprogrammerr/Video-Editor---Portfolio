@@ -3,12 +3,14 @@ import motion1 from '../assets/AICerts.mp4';
 import motion2 from '../assets/Master_Frame.mp4';
 
 const MotionGraphics = () => {
-  const videos = ["https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067600/AICerts_jxshfq.mp4", 
-    "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067615/Master_Frame_zsyzen.mp4"];
+  const videos = ["https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067600/AICerts_jxshfq.mp4",
+    "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067615/Master_Frame_zsyzen.mp4",
+    "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775805042/Tarak_qw3uvp.mp4",
+  "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775806352/Shot_by_-_vyomb07_hpgqbc.mp4"];
 
   return (
     <div className='flex flex-col items-center overflow-x-hidden w-full pb-16'>
-      
+
       {/* 1. Responsive Title: text-4xl on mobile, 5xl on tablets, 6xl on desktop */}
       <h1 className="mt-16 md:mt-24 mb-8 md:mb-12 text-white bungee-shade-regular text-4xl sm:text-5xl md:text-6xl text-center px-4">
         Motion Graphics
@@ -16,7 +18,7 @@ const MotionGraphics = () => {
 
       {/* 2. Container: Limits maximum width on giant screens and adds side padding */}
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* 3. The Grid: 1 column on mobile, 2 columns on tablets and up */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 justify-items-center">
           {videos.map((videoSrc, index) => (
@@ -35,7 +37,7 @@ const MotionGraphics = () => {
             </video>
           ))}
         </div>
-        
+
       </div>
     </div>
   );
