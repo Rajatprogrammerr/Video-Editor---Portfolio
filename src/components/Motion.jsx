@@ -6,7 +6,7 @@ const MotionGraphics = () => {
   const videos = ["https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067600/AICerts_jxshfq.mp4",
     "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067615/Master_Frame_zsyzen.mp4",
     "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775805042/Tarak_qw3uvp.mp4",
-  "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775806352/Shot_by_-_vyomb07_hpgqbc.mp4"];
+  "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1776500155/Comp_1_amzwcu.mp4"];
 
   return (
     <div className='flex flex-col items-center overflow-x-hidden w-full pb-16'>
