@@ -2,16 +2,19 @@ import React from 'react';
 
 const Vertical = () => {
   const videos = [
+    "https://res.cloudinary.com/dwvkomwia/video/upload/v1781716367/Trends_Footwear_vsf0wj.mp4",
+    "https://res.cloudinary.com/dwvkomwia/video/upload/v1781716203/Haldi_3_mbkcqq.mp4",
+    "https://res.cloudinary.com/dwvkomwia/video/upload/v1784655967/Samreen_gu61uc.mp4",
+    "https://res.cloudinary.com/dwvkomwia/video/upload/v1784656311/Mercedes_x_doc_coffee_poypgw.mp4",
+    "https://res.cloudinary.com/dwvkomwia/video/upload/v1784655966/Thar_Delivery_i5mxrm.mp4",
+    "https://res.cloudinary.com/dwvkomwia/video/upload/v1781716155/Migsun_2_qhwjbi.mp4",
+    "https://res.cloudinary.com/dwvkomwia/video/upload/v1781716281/TCA_Promo_1_msuyzx.mp4",
     "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067632/Edtech4_fjkftj.mp4",
     "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067626/tech_sboivl.mp4",
     "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067603/Edtech3_mbnxmr.mp4",
     "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775067625/Edtech1_gul3rv.mp4",
     "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775805760/Sample_glwadk.mp4",
     // "https://res.cloudinary.com/dwvkomwia/video/upload/q_auto/f_auto/v1775805685/Gali_no_11_saweyy.mp4"
-    "https://res.cloudinary.com/dwvkomwia/video/upload/v1781716203/Haldi_3_mbkcqq.mp4",
-  "https://res.cloudinary.com/dwvkomwia/video/upload/v1781716155/Migsun_2_qhwjbi.mp4",
-  "https://res.cloudinary.com/dwvkomwia/video/upload/v1781716367/Trends_Footwear_vsf0wj.mp4",
-  "https://res.cloudinary.com/dwvkomwia/video/upload/v1781716281/TCA_Promo_1_msuyzx.mp4"
   ];
 
   return (
